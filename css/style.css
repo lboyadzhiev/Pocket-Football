@@ -24,22 +24,25 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
   background-color: var(--color-primary-blue); }
 
 .nav-el {
   width: 95vw;
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  padding-right: 2rem;
-  align-items: center; }
+  list-style: none; }
   .nav-el__item {
     display: inline-block; }
   .nav-el__link {
     text-decoration: none;
-    color: var(--color-white);
-    font-size: 1.6rem;
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 300;
     padding: 2rem; }
     .nav-el__link:hover {
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid var(--color-light); }
+  .nav-el__user-name {
+    font-weight: 500;
+    color: var(--color-white); }

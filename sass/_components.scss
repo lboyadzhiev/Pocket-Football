@@ -3,8 +3,6 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding-right: 2rem;
-  align-items: center;
 
   &__item {
     display: inline-block;
@@ -12,12 +10,18 @@
 
   &__link {
     text-decoration: none;
-    color: var(--color-white);
-    font-size: 1.6rem;
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 300;
     padding: 2rem;
 
     &:hover {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid var(--color-light);
     }
+  }
+
+  &__user-name {
+    font-weight: 500;
+    color: var(--color-white);
   }
 }
