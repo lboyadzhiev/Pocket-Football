@@ -1,5 +1,5 @@
 :root {
-  --color-primary-blue: #091540;
+  --color-primary-blue: #023047;
   --color-primary-green: #5fad41;
   --color-white: #fff;
   --color-light: #fffff2; }
@@ -40,9 +40,9 @@ body {
     color: var(--color-light);
     font-size: 1.5rem;
     font-weight: 300;
-    padding: 2rem; }
+    padding: 1.5rem; }
     .nav-el__link:hover {
-      border-bottom: 1px solid var(--color-light); }
+      border-bottom: 2px solid var(--color-primary-green); }
   .nav-el__user-name {
     font-weight: 500;
     color: var(--color-white); }
