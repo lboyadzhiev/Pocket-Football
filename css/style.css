@@ -43,6 +43,18 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem);
+    background-color: var(--color-primary-green);
+    color: var(--color-primary-blue); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -90,7 +102,8 @@ body {
 .heading-primary {
   color: var(--color-primary-blue);
   text-transform: uppercase;
-  flex-basis: 20rem; }
+  flex-basis: 20rem;
+  backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
@@ -119,7 +132,11 @@ body {
   padding: 1.5rem 4rem;
   font-size: 1.6rem;
   background-color: var(--color-primary-blue);
-  color: var(--color-light); }
+  color: var(--color-light);
+  animation-name: moveInBottom;
+  animation-delay: 0.2s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards; }
 
 .btn:hover {
   background-color: var(--color-primary-green); }
