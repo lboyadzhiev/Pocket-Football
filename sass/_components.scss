@@ -1,0 +1,23 @@
+.nav-el {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 2rem;
+  align-items: center;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    padding: 2rem;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+}
