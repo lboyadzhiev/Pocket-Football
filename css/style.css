@@ -98,9 +98,6 @@ body {
   list-style: none; }
   .nav-el__item {
     display: inline-block; }
-    @media only screen and (max-width: 45em) {
-      .nav-el__item {
-        display: none; } }
   .nav-el__link {
     text-decoration: none;
     color: var(--color-light);
@@ -109,16 +106,25 @@ body {
     padding: 1.5rem; }
     .nav-el__link:hover {
       border-bottom: 2px solid var(--color-primary-green); }
+    @media only screen and (max-width: 45em) {
+      .nav-el__link {
+        display: none; } }
   .nav-el__user-name {
     font-weight: 500;
     color: var(--color-white); }
+    @media only screen and (max-width: 45em) {
+      .nav-el__user-name {
+        display: block;
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem; } }
 
 .menu-bar {
   font-size: 4rem;
   color: var(--color-light);
   position: absolute;
   right: 2rem;
-  top: -1rem;
+  top: -0.5rem;
   display: none; }
   @media only screen and (max-width: 45em) {
     .menu-bar {

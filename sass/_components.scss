@@ -14,10 +14,6 @@
 
   &__item {
     display: inline-block;
-
-    @media only screen and (max-width: $bg-small) {
-      display: none;
-    }
   }
 
   &__link {
@@ -30,11 +26,22 @@
     &:hover {
       border-bottom: 2px solid var(--color-primary-green);
     }
+
+    @media only screen and (max-width: $bg-small) {
+      display: none;
+    }
   }
 
   &__user-name {
     font-weight: 500;
     color: var(--color-white);
+
+    @media only screen and (max-width: $bg-small) {
+      display: block;
+      position: absolute;
+      top: -0.5rem;
+      left: 1rem;
+    }
   }
 }
 
@@ -43,7 +50,7 @@
   color: var(--color-light);
   position: absolute;
   right: 2rem;
-  top: -1rem;
+  top: -0.5rem;
   display: none;
 
   @media only screen and (max-width: $bg-small) {
