@@ -84,10 +84,6 @@
   flex-basis: 20rem;
   backface-visibility: hidden;
 
-  @media only screen and (max-width: $bg-small) {
-    flex-basis: 30rem;
-  }
-
   &--main {
     display: block;
     font-size: 4rem;
