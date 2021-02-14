@@ -8,5 +8,24 @@
 
 .main-section {
   width: 75vw;
+  height: 90vh;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bg-large) {
+    width: 90vw;
+  }
+
+  @media only screen and (max-width: $bg-small) {
+    width: 100vw;
+  }
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary-blue);
+  padding: 2rem;
 }

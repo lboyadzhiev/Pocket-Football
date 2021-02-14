@@ -1,10 +1,16 @@
 :root {
   --color-primary-blue: #023047;
   // --color-primary-green: #5fad41;
-  --color-primary-green: green;
+  --color-primary-green: rgb(20, 141, 20);
   --color-white: #fff;
   --color-light: #fffff2;
 }
+
+$bg-largest: 75em; // 1200 px
+$bg-large: 68.75em; // 1100 px
+$bg-medium: 50em; // 800 px
+$bg-small: 45em; // 720 px
+$bg-smallest: 31.25em; // 500 px
 
 * {
   margin: 0;
@@ -20,6 +26,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bg-large) {
+    font-size: 50%;
+  }
 }
 
 body {

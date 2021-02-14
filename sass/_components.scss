@@ -1,3 +1,11 @@
+.navbar {
+  position: relative;
+
+  @media only screen and (max-width: $bg-small) {
+    padding-top: 3rem;
+  }
+}
+
 .nav-el {
   width: 100vw;
   display: flex;
@@ -6,6 +14,10 @@
 
   &__item {
     display: inline-block;
+
+    @media only screen and (max-width: $bg-small) {
+      display: none;
+    }
   }
 
   &__link {
@@ -26,6 +38,19 @@
   }
 }
 
+.menu-bar {
+  font-size: 4rem;
+  color: var(--color-light);
+  position: absolute;
+  right: 2rem;
+  top: -1rem;
+  display: none;
+
+  @media only screen and (max-width: $bg-small) {
+    display: block;
+  }
+}
+
 .image {
   background-image: url("https://ronaldo.com/wp-content/uploads/2018/03/Natural-grass-vs.-artificial-grass.jpg");
   background-size: cover;
@@ -33,6 +58,10 @@
   height: 30vh;
   margin-top: 3rem;
   margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bg-small) {
+    margin-top: 1rem;
+  }
 }
 
 .text-box {
@@ -48,6 +77,10 @@
   flex-basis: 20rem;
   backface-visibility: hidden;
 
+  @media only screen and (max-width: $bg-small) {
+    flex-basis: 30rem;
+  }
+
   &--main {
     display: block;
     font-size: 4rem;
@@ -58,6 +91,15 @@
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-in;
+
+    @media only screen and (max-width: $bg-medium) {
+      font-size: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bg-small) {
+      font-size: 3.2s;
+      text-align: center;
+    }
   }
 
   &--sub {
@@ -70,7 +112,27 @@
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in;
+
+    @media only screen and (max-width: $bg-medium) {
+      font-size: 2.2rem;
+    }
   }
+}
+
+.heading-secondary {
+  color: var(--color-primary-green);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.text-footer {
+  list-style: none;
+  color: var(--color-light);
+  font-size: 1.6rem;
+}
+
+.footer-btn {
+  display: flex;
 }
 
 .btn {
@@ -81,16 +143,21 @@
     text-decoration: none;
     letter-spacing: 1rem;
     text-transform: uppercase;
+    align-self: center;
     border-radius: 10rem;
     padding: 1.5rem 4rem;
     font-size: 1.6rem;
-    background-color: var(--color-primary-blue);
+    background-color: var(--color-primary-green);
     color: var(--color-light);
 
-    animation-name: moveInBottom;
+    animation-name: moveInLeft;
     animation-delay: 0.2s;
     animation-duration: 2s;
     animation-fill-mode: backwards;
+
+    @media only screen and (max-width: $bg-smallest) {
+      display: none;
+    }
   }
 
   &:hover {
