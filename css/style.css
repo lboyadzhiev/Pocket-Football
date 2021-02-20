@@ -36,7 +36,8 @@
   --color-primary-blue: #023047;
   --color-primary-green: rgb(20, 141, 20);
   --color-white: #fff;
-  --color-light: #fffff2; }
+  --color-light: #fffff2;
+  --color-grey: #edf2f4; }
 
 * {
   margin: 0;
@@ -57,33 +58,6 @@ html {
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: var(--color-light); }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  background-color: var(--color-primary-blue); }
-
-.main-section {
-  width: 75vw;
-  height: 90vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  @media only screen and (max-width: 68.75em) {
-    .main-section {
-      width: 90vw; } }
-  @media only screen and (max-width: 45em) {
-    .main-section {
-      width: 100vw; } }
-
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color-primary-blue);
-  padding: 2rem; }
 
 .navbar {
   position: relative; }
@@ -147,6 +121,110 @@ body {
   justify-content: space-between;
   align-items: center; }
 
+.footer-btn {
+  display: flex; }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  align-self: center;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  background-color: var(--color-primary-green);
+  color: var(--color-light);
+  animation-name: moveInLeft;
+  animation-delay: 0.2s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards; }
+  @media only screen and (max-width: 31.25em) {
+    .btn, .btn:link, .btn:visited {
+      display: none; } }
+
+.btn:hover {
+  background-color: var(--color-primary-green); }
+
+.btn-form {
+  margin: 2rem;
+  font-size: 2rem;
+  padding: 1rem 6rem;
+  border-radius: 5px;
+  background-color: var(--color-primary-blue);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer; }
+  .btn-form:hover {
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-light);
+    color: var(--color-primary-blue); }
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; }
+  .form__label {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: var(--color-primary-blue); }
+  .form__item {
+    background-color: var(--color-grey);
+    font-family: inherit;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    color: var(--color-primary-blue);
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--color-primary-blue);
+    display: block;
+    transition: all 0.3s;
+    width: 60%; }
+    .form__item:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid var(--color-primary-blue); }
+    .form__item:focus:invalid {
+      border-bottom: 3px solid red; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  background-color: var(--color-primary-blue); }
+
+.main-section {
+  width: 75vw;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media only screen and (max-width: 68.75em) {
+    .main-section {
+      width: 90vw; } }
+  @media only screen and (max-width: 45em) {
+    .main-section {
+      width: 100vw; } }
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  height: 100rem;
+  margin: 5rem; }
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary-blue);
+  padding: 2rem; }
+
 .heading-primary {
   color: var(--color-primary-blue);
   text-transform: uppercase;
@@ -191,27 +269,6 @@ body {
   color: var(--color-light);
   font-size: 1.6rem; }
 
-.footer-btn {
-  display: flex; }
-
-.btn, .btn:link, .btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  align-self: center;
-  border-radius: 10rem;
-  padding: 1.5rem 4rem;
-  font-size: 1.6rem;
-  background-color: var(--color-primary-green);
-  color: var(--color-light);
-  animation-name: moveInLeft;
-  animation-delay: 0.2s;
-  animation-duration: 2s;
-  animation-fill-mode: backwards; }
-  @media only screen and (max-width: 31.25em) {
-    .btn, .btn:link, .btn:visited {
-      display: none; } }
-
-.btn:hover {
-  background-color: var(--color-primary-green); }
+.heading-tertiary {
+  color: var(--color-primary-blue);
+  font-size: 2.5rem; }

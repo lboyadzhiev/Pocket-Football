@@ -78,62 +78,6 @@
   align-items: center;
 }
 
-.heading-primary {
-  color: var(--color-primary-blue);
-  text-transform: uppercase;
-  flex-basis: 20rem;
-  backface-visibility: hidden;
-
-  &--main {
-    display: block;
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    margin-bottom: 3rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-
-    @media only screen and (max-width: $bg-medium) {
-      font-size: 3.2rem;
-    }
-
-    @media only screen and (max-width: $bg-small) {
-      font-size: 3.2s;
-      text-align: center;
-    }
-  }
-
-  &--sub {
-    display: block;
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: 1rem;
-    text-align: center;
-
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-
-    @media only screen and (max-width: $bg-medium) {
-      font-size: 2.2rem;
-    }
-  }
-}
-
-.heading-secondary {
-  color: var(--color-primary-green);
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-}
-
-.text-footer {
-  list-style: none;
-  color: var(--color-light);
-  font-size: 1.6rem;
-}
-
 .footer-btn {
   display: flex;
 }
@@ -165,5 +109,61 @@
 
   &:hover {
     background-color: var(--color-primary-green);
+  }
+}
+
+.btn-form {
+  margin: 2rem;
+  font-size: 2rem;
+  padding: 1rem 6rem;
+  border-radius: 5px;
+  background-color: var(--color-primary-blue);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-light);
+    color: var(--color-primary-blue);
+  }
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__label {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: var(--color-primary-blue);
+  }
+
+  &__item {
+    background-color: var(--color-grey);
+    font-family: inherit;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    color: var(--color-primary-blue);
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--color-primary-blue);
+    display: block;
+    transition: all 0.3s;
+    width: 60%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(black, 0.1);
+      border-bottom: 3px solid (var(--color-primary-blue));
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
   }
 }
