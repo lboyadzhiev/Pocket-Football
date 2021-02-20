@@ -182,7 +182,7 @@ body {
     border-bottom: 1px solid var(--color-primary-blue);
     display: block;
     transition: all 0.3s;
-    width: 60%; }
+    width: 70%; }
     .form__item:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -270,5 +270,6 @@ body {
   font-size: 1.6rem; }
 
 .heading-tertiary {
+  padding: 2rem;
   color: var(--color-primary-blue);
   font-size: 2.5rem; }
