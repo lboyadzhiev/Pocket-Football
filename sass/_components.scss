@@ -128,7 +128,7 @@
 
   &:hover {
     border: 2px solid var(--color-primary-blue);
-    background-color: var(--color-light);
+    background-color: var(--color-primary-green);
     color: var(--color-primary-blue);
   }
 }
@@ -139,6 +139,13 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+
+  @media only screen and (max-width: $bg-large) {
+    width: 60%;
+  }
+  @media only screen and (max-width: $bg-medium) {
+    width: 90%;
+  }
 
   &__label {
     font-size: 2rem;
@@ -160,6 +167,18 @@
     transition: all 0.3s;
     width: 70%;
 
+    @media only screen and (max-width: $bg-large) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bg-medium) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bg-smallest) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(black, 0.1);
@@ -178,6 +197,16 @@
   width: 50%;
   margin: 2rem auto;
 
+  @media only screen and (max-width: $bg-medium) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: $bg-smallest) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__item {
     display: inline-block;
     background-color: var(--color-primary-light);
@@ -192,8 +221,21 @@
     animation-duration: 2s;
     animation-timing-function: ease-in;
 
+    @media only screen and (max-width: $bg-medium) {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $bg-smallest) {
+      width: 90%;
+    }
+
     &:focus {
       outline: none;
     }
+  }
+
+  &__item::placeholder {
+    text-align: center;
   }
 }

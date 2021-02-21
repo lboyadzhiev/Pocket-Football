@@ -160,7 +160,7 @@ body {
   animation-timing-function: ease-in; }
   .btn-form:hover {
     border: 2px solid var(--color-primary-blue);
-    background-color: var(--color-light);
+    background-color: var(--color-primary-green);
     color: var(--color-primary-blue); }
 
 .form {
@@ -169,6 +169,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem; }
+  @media only screen and (max-width: 68.75em) {
+    .form {
+      width: 60%; } }
+  @media only screen and (max-width: 50em) {
+    .form {
+      width: 90%; } }
   .form__label {
     font-size: 2rem;
     margin: 1rem;
@@ -186,6 +192,15 @@ body {
     display: block;
     transition: all 0.3s;
     width: 70%; }
+    @media only screen and (max-width: 68.75em) {
+      .form__item {
+        width: 90%; } }
+    @media only screen and (max-width: 50em) {
+      .form__item {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .form__item {
+        width: 100%; } }
     .form__item:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -198,6 +213,14 @@ body {
   justify-content: space-around;
   width: 50%;
   margin: 2rem auto; }
+  @media only screen and (max-width: 50em) {
+    .login-form {
+      width: 90%; } }
+  @media only screen and (max-width: 31.25em) {
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .login-form__item {
     display: inline-block;
     background-color: var(--color-primary-light);
@@ -210,8 +233,17 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
+    @media only screen and (max-width: 50em) {
+      .login-form__item {
+        font-size: 2.5rem;
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .login-form__item {
+        width: 90%; } }
     .login-form__item:focus {
       outline: none; }
+  .login-form__item::placeholder {
+    text-align: center; }
 
 .header {
   display: flex;
@@ -234,18 +266,11 @@ body {
     .main-section {
       width: 100vw; } }
 
-.register-form {
+.form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  height: 100rem;
-  margin: 5rem; }
-
-.login-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  margin: 5rem auto; }
 
 .main-footer {
   display: flex;
@@ -301,3 +326,9 @@ body {
   padding: 2rem;
   color: var(--color-primary-blue);
   font-size: 2.5rem; }
+  @media only screen and (max-width: 50em) {
+    .heading-tertiary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-tertiary {
+      text-align: center; } }

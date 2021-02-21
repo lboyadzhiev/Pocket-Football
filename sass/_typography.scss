@@ -58,4 +58,12 @@
   padding: 2rem;
   color: var(--color-primary-blue);
   font-size: 2.5rem;
+
+  @media only screen and (max-width: $bg-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $bg-smallest) {
+    text-align: center;
+  }
 }
