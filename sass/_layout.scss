@@ -23,7 +23,7 @@
   }
 }
 
-.form-section {
+.register-form {
   // background-image: url(https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   // background-size: cover;
   display: flex;
@@ -32,6 +32,12 @@
   margin: 0 auto;
   height: 100rem;
   margin: 5rem;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer {

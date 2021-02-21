@@ -122,6 +122,10 @@
   border: none;
   cursor: pointer;
 
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+
   &:hover {
     border: 2px solid var(--color-primary-blue);
     background-color: var(--color-light);
@@ -164,6 +168,32 @@
 
     &:focus:invalid {
       border-bottom: 3px solid red;
+    }
+  }
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 2rem auto;
+
+  &__item {
+    display: inline-block;
+    background-color: var(--color-primary-light);
+    padding: 1.5rem 2rem;
+    border: none;
+    border-bottom: 1px solid var(--color-primary-blue);
+    width: 45%;
+    font-size: 1.8rem;
+    color: var(--color-primary-blue);
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+    &:focus {
+      outline: none;
     }
   }
 }

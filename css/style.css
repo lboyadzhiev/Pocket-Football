@@ -154,7 +154,10 @@ body {
   background-color: var(--color-primary-blue);
   color: var(--color-light);
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
   .btn-form:hover {
     border: 2px solid var(--color-primary-blue);
     background-color: var(--color-light);
@@ -190,6 +193,26 @@ body {
     .form__item:focus:invalid {
       border-bottom: 3px solid red; }
 
+.login-form {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 2rem auto; }
+  .login-form__item {
+    display: inline-block;
+    background-color: var(--color-primary-light);
+    padding: 1.5rem 2rem;
+    border: none;
+    border-bottom: 1px solid var(--color-primary-blue);
+    width: 45%;
+    font-size: 1.8rem;
+    color: var(--color-primary-blue);
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in; }
+    .login-form__item:focus {
+      outline: none; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -211,13 +234,18 @@ body {
     .main-section {
       width: 100vw; } }
 
-.form-section {
+.register-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   height: 100rem;
   margin: 5rem; }
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .main-footer {
   display: flex;
