@@ -70,8 +70,18 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none; }
+  @media only screen and (max-width: 45em) {
+    .nav-el {
+      display: flex;
+      flex-direction: column-reverse; } }
   .nav-el__item {
     display: inline-block; }
+    @media only screen and (max-width: 45em) {
+      .nav-el__item {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        display: none; } }
   .nav-el__link {
     text-decoration: none;
     color: var(--color-light);
@@ -82,7 +92,7 @@ body {
       border-bottom: 2px solid var(--color-primary-green); }
     @media only screen and (max-width: 45em) {
       .nav-el__link {
-        display: none; } }
+        font-size: 2rem; } }
   .nav-el__user-name {
     font-weight: 500;
     color: var(--color-white); }
