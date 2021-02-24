@@ -256,7 +256,6 @@ body {
     text-align: center; }
 
 .profile {
-  background-color: orangered;
   height: 70%;
   width: 70%;
   display: flex;
@@ -267,7 +266,6 @@ body {
     width: 40%;
     border-radius: 2rem; }
   .profile__game {
-    background-color: lightblue;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -318,7 +316,7 @@ body {
   height: 50rem;
   width: 80%;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: var(--color-grey);
   border-radius: 3rem;
   display: flex;
   align-items: center; }
