@@ -284,3 +284,20 @@
     border-radius: 2rem;
   }
 }
+
+.figure-shape {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 2rem;
+}
+
+.user-info {
+  width: 50%;
+}
