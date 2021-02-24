@@ -38,3 +38,13 @@
   background-color: var(--color-primary-blue);
   padding: 2rem;
 }
+
+.myGame-section {
+  height: 50rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+}

@@ -255,6 +255,32 @@ body {
   .login-form__item::placeholder {
     text-align: center; }
 
+.profile {
+  background-color: orangered;
+  height: 70%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto; }
+  .profile__personal {
+    background-color: yellowgreen;
+    width: 40%;
+    border-radius: 2rem; }
+  .profile__game {
+    background-color: lightblue;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .profile__contacts {
+    background-color: purple;
+    height: 45%;
+    border-radius: 2rem; }
+  .profile__info {
+    background-color: blue;
+    height: 45%;
+    border-radius: 2rem; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -287,6 +313,15 @@ body {
   justify-content: space-between;
   background-color: var(--color-primary-blue);
   padding: 2rem; }
+
+.myGame-section {
+  height: 50rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center; }
 
 .heading-primary {
   color: var(--color-primary-blue);
