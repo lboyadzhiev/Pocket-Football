@@ -40,11 +40,11 @@
 }
 
 .myGame-section {
-  height: 50rem;
-  width: 80%;
-  margin: 0 auto;
-  background-color: var(--color-grey);
-  border-radius: 3rem;
+  height: 80vh;
+  background-color: yellowgreen;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin: auto;
 }

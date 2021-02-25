@@ -139,9 +139,10 @@
   animation-timing-function: ease-in;
 
   &:hover {
-    border: 2px solid var(--color-primary-blue);
     background-color: var(--color-primary-green);
-    color: var(--color-primary-blue);
+    color: var(--color-light);
+
+    box-sizing: border-box;
   }
 }
 
@@ -253,51 +254,23 @@
 }
 
 .profile {
-  height: 70%;
+  background-color: var(--color-grey);
   width: 70%;
-  display: flex;
-  justify-content: space-between;
+  height: 70%;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
 
-  &__personal {
-    background-color: yellowgreen;
+  * {
+    background-color: var(--color-light);
+  }
+
+  &__card {
     width: 40%;
-    border-radius: 2rem;
-  }
-
-  &__game {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__contacts {
-    background-color: purple;
-    height: 45%;
-    border-radius: 2rem;
   }
 
   &__info {
-    background-color: blue;
-    height: 45%;
-    border-radius: 2rem;
+    width: 50%;
   }
-}
-
-.figure-shape {
-  width: 90%;
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.img {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 2rem;
-}
-
-.user-info {
-  width: 50%;
 }
