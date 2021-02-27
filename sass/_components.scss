@@ -39,7 +39,8 @@
     font-weight: 300;
     padding: 1.5rem;
 
-    &:hover {
+    &:hover,
+    &:active {
       border-bottom: 2px solid var(--color-primary-green);
     }
 

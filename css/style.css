@@ -90,7 +90,7 @@ body {
     font-size: 1.5rem;
     font-weight: 300;
     padding: 1.5rem; }
-    .nav-el__link:hover {
+    .nav-el__link:hover, .nav-el__link:active {
       border-bottom: 2px solid var(--color-primary-green); }
     @media only screen and (max-width: 45em) {
       .nav-el__link {
