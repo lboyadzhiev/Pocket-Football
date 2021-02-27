@@ -268,16 +268,34 @@
   padding: 5rem;
   border-radius: 2rem;
   * {
+  }
+
+  &__card {
+    flex: 0 0 40%;
     background-color: var(--color-light);
     border-radius: 2rem;
     box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
   }
 
-  &__card {
-    flex: 0 0 40%;
+  &__info {
+    background-color: var(--color-grey) !important;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    * {
+      background-color: var(--color-light);
+      border-radius: 2rem;
+      box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+    }
   }
 
-  &__info {
-    flex: 0 0 50%;
+  &__info-personal {
+    flex: 0 0 45%;
+  }
+
+  &__info-game {
+    flex: 0 0 45%;
   }
 }
