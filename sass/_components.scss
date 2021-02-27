@@ -267,14 +267,33 @@
   justify-content: space-around;
   padding: 5rem;
   border-radius: 2rem;
-  * {
-  }
+  padding: 4rem 2.5rem;
 
   &__card {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
     background-color: var(--color-light);
     border-radius: 2rem;
     box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+  }
+
+  &__card-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    margin: 2rem auto;
+    box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+
+    & img {
+      width: 15rem;
+      height: 15rem;
+      flex: 0 0 40%;
+    }
+
+    & div {
+      flex: 0 0 50%;
+    }
   }
 
   &__info {
