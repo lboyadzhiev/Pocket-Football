@@ -260,17 +260,20 @@ body {
 .profile {
   background-color: var(--color-grey);
   width: 70%;
-  height: 70%;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-around;
-  padding: 5rem; }
+  padding: 5rem;
+  border-radius: 2rem; }
   .profile * {
-    background-color: var(--color-light); }
+    background-color: var(--color-light);
+    border-radius: 2rem;
+    box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
   .profile__card {
-    width: 40%; }
+    flex: 0 0 40%; }
   .profile__info {
-    width: 50%; }
+    flex: 0 0 50%; }
 
 .header {
   display: flex;
@@ -307,7 +310,6 @@ body {
 
 .myGame-section {
   height: 80vh;
-  background-color: yellowgreen;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

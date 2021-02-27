@@ -261,21 +261,23 @@
 .profile {
   background-color: var(--color-grey);
   width: 70%;
-  height: 70%;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-around;
   padding: 5rem;
-
+  border-radius: 2rem;
   * {
     background-color: var(--color-light);
+    border-radius: 2rem;
+    box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
   }
 
   &__card {
-    width: 40%;
+    flex: 0 0 40%;
   }
 
   &__info {
-    width: 50%;
+    flex: 0 0 50%;
   }
 }
