@@ -60,22 +60,24 @@ body {
   background-color: var(--color-light); }
 
 .navbar {
-  position: relative; }
+  position: relative;
+  width: 100vw; }
   @media only screen and (max-width: 45em) {
     .navbar {
       padding-top: 3rem; } }
 
 .nav-el {
-  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  list-style: none; }
+  justify-content: space-between; }
+  .nav-el__div {
+    display: flex;
+    justify-content: space-between; }
   @media only screen and (max-width: 45em) {
     .nav-el {
       display: flex;
       flex-direction: column-reverse; } }
   .nav-el__item {
-    display: inline-block; }
+    list-style: none; }
     @media only screen and (max-width: 45em) {
       .nav-el__item {
         width: 100%;

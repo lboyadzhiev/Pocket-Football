@@ -1,5 +1,6 @@
 .navbar {
   position: relative;
+  width: 100vw;
 
   @media only screen and (max-width: $bg-small) {
     padding-top: 3rem;
@@ -7,10 +8,13 @@
 }
 
 .nav-el {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
-  list-style: none;
+
+  &__div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media only screen and (max-width: $bg-small) {
     display: flex;
@@ -18,7 +22,7 @@
   }
 
   &__item {
-    display: inline-block;
+    list-style: none;
 
     @media only screen and (max-width: $bg-small) {
       width: 100%;
