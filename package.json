@@ -14,5 +14,9 @@
   "devDependencies": {
     "lite-server": "^2.6.1",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "lit-html": "^1.4.1",
+    "page": "^1.11.6"
   }
 }

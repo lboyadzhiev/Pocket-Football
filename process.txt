@@ -1,0 +1,5 @@
+1. Setup NPM project (package.json + librairies)
+2. Implement HTML and CSS 
+3. Configure routing with placeholder modules
+4. Implement requests
+5. Implement each view
