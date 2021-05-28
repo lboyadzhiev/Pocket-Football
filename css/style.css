@@ -25,9 +25,7 @@
     opacity: 0;
     transform: translateY(10rem); }
   80% {
-    transform: translateY(-1rem);
-    background-color: var(--color-primary-blue);
-    color: var(--color-primary-green); }
+    transform: translateY(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -163,7 +161,7 @@ body {
   font-size: 2rem;
   padding: 1rem 6rem;
   border-radius: 5px;
-  background-color: var(--color-primary-blue);
+  background-color: var(--color-primary-green);
   color: var(--color-light);
   border: none;
   cursor: pointer;
@@ -171,7 +169,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in; }
   .btn-form:hover {
-    background-color: var(--color-primary-green);
+    background-color: var(--color-primary-blue);
     color: var(--color-light);
     box-sizing: border-box; }
 
@@ -256,6 +254,16 @@ body {
       outline: none; }
   .login-form__item::placeholder {
     text-align: center; }
+
+.login-with {
+  margin-top: 3rem; }
+
+.fab {
+  font-size: 4rem;
+  color: var(--color-primary-blue);
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
 
 .profile {
   background-color: var(--color-grey);
