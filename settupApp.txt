@@ -1,0 +1,4 @@
+1. Create Back4app
+2. View documentation on Users
+3. Adjust api.js to include AppID, APIKey, correct headers, register/login/logout routes and body
+4. Test register/logout/login
