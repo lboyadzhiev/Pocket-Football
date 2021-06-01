@@ -8,10 +8,7 @@
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
             rel="stylesheet"
         />
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -24,16 +21,14 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <div class="user">
+                <div id="user">
                     <ul class="nav-el">
                         <div class="nav-el__div">
                             <li class="nav-el__item">
                                 <a href="#" class="nav-el__link">My games</a>
                             </li>
                             <li class="nav-el__item">
-                                <a href="#" class="nav-el__link"
-                                    >Publick games</a
-                                >
+                                <a href="#" class="nav-el__link">Publick games</a>
                             </li>
                             <li class="nav-el__item">
                                 <a href="#" class="nav-el__link">PocketFEED</a>
@@ -45,25 +40,22 @@
 
                         <div class="nav-el__div">
                             <li class="nav-el__item">
-                                <a
-                                    href="#"
-                                    class="nav-el__link nav-el__user-name"
-                                    >ChrissRb</a
-                                >
+                                <a href="#" class="nav-el__link nav-el__user-name" id="welcome"></a>
                             </li>
                             <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Logout</a>
+                                <a id="logoutBtn" href="/" class="nav-el__link">Logout</a>
                             </li>
                         </div>
                     </ul>
                 </div>
-                <div class="quest">
+                <div id="quest">
                     <ul class="nav-el">
                         <div class="nav-el__div">
                             <li class="nav-el__item">
-                                <a href="#" class="nav-el__link"
-                                    >Publick games</a
-                                >
+                                <a href="/" class="nav-el__link">Home</a>
+                            </li>
+                            <li class="nav-el__item">
+                                <a href="#" class="nav-el__link">Publick games</a>
                             </li>
                             <li class="nav-el__item">
                                 <a href="#" class="nav-el__link">PocketFEED</a>
@@ -75,10 +67,10 @@
 
                         <div class="nav-el__div">
                             <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Login</a>
+                                <a href="/login" class="nav-el__link">Login</a>
                             </li>
                             <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Sign Up</a>
+                                <a href="/register" class="nav-el__link">Sign Up</a>
                             </li>
                         </div>
                     </ul>
@@ -88,56 +80,6 @@
             </nav>
         </header>
 
-        <main class="main-section">
-            <div class="image"></div>
-            <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Pocket football</span>
-                    <span class="heading-primary--sub"
-                        >where the game is starting</span
-                    >
-                </h1>
-            </div>
-
-            <div class="main-footer">
-                <div class="footer-text">
-                    <h2 class="heading-secondary">
-                        Join Pocket Football community
-                    </h2>
-                    <ul>
-                        <li class="text-footer">Create football events</li>
-                        <li class="text-footer">Join football tournaments</li>
-                        <li class="text-footer">
-                            Invite your friends to create ultimate football
-                            community
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-btn">
-                    <a href="#" class="btn">Sign up</a>
-                </div>
-            </div>
-        </main>
-        <section class="form-section">
-            <h2 class="heading-primary--sub">Login</h2>
-            <form action="POST" class="login-form">
-                <input
-                    type="text"
-                    class="login-form__item"
-                    placeholder="email"
-                />
-                <input
-                    type="password"
-                    class="login-form__item"
-                    placeholder="password"
-                />
-            </form>
-
-            <button class="btn-form">Login</button>
-
-            <div class="login-with">
-                <a href="/"><i class="fab fa-facebook"></i></a>
-            </div>
-        </section>
+        <div id="container"></div>
     </body>
 </html>

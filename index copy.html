@@ -68,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="footer-btn">
-                    <a href="#" class="btn">Sign up</a>
+                    <a href="/register" class="btn">Sign up</a>
                 </div>
             </div>
         </main>
@@ -78,31 +78,47 @@
 
             <form action="POST" class="form">
                 <label for="firstName" class="form__label">First Name</label>
-                <input type="text" id="firstName" class="form__item" required />
+                <input type="text" id="firstName" class="form__item" name="username" required />
 
                 <!-- <label for="lastName" class="form__label">Last Name</label>
          <input type="text" id="lastName" class="form__item" required> -->
 
                 <label for="email" class="form__label">Email Address</label>
-                <input type="email" id="email" class="form__item" required />
+                <input type="email" id="email" class="form__item" name="email" required />
 
                 <label for="password" class="form__label">Password</label>
-                <input type="password" id="password" class="form__item" required />
+                <input type="password" id="password" class="form__item" name="password" required />
 
                 <label for="rePassword" class="form__label">Re-Password</label>
-                <input type="password" id="rePassword" class="form__item" required />
+                <input type="password" id="rePassword" class="form__item" name="repass" required />
 
-                <button class="btn-form">Register</button>
+                <input type="submit" class="btn-form" value="Register" />
             </form>
         </section>
 
         <section class="form-section">
             <h2 class="heading-primary--sub">Login</h2>
             <form action="POST" class="login-form">
-                <input type="text" class="login-form__item" placeholder="email" />
-                <input type="password" class="login-form__item" placeholder="password" />
+                <div class="login-form__items">
+                    <input
+                        type="text"
+                        class="login-form__item"
+                        placeholder="username"
+                        name="username"
+                    />
+                    <input
+                        type="password"
+                        class="login-form__item"
+                        placeholder="password"
+                        name="password"
+                    />
+                </div>
+                <input type="submit" class="btn-form login-form__btn-login" value="Login" />
             </form>
-            <button class="btn-form">Login</button>
+
+            <div class="login-with">
+                <a href="/"><i class="fab fa-facebook"></i></a>
+            </div>
         </section>
 
         <section class="myGame-section">
