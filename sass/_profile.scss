@@ -15,15 +15,38 @@
     }
 
     &__player-info {
-        background-color: orangered;
         height: 50vh;
         width: 35vw;
+        background-color: var(--color-white);
         border-radius: var(--border);
         box-shadow: var(--shadow);
+
+        padding: 1rem;
 
         @media only screen and (max-width: $bg-small) {
             width: 75vw;
             margin-bottom: 1rem;
+        }
+    }
+
+    &__img {
+        // width: 40rem;
+        // margin: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        border-radius: var(--border);
+        box-shadow: 0px 0px 3px var(--color-primary-blue);
+        padding: 1rem 2rem;
+
+        &--img {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        &--name {
+            width: 20rem;
         }
     }
 
@@ -62,5 +85,10 @@
                 height: 20vh;
             }
         }
+    }
+
+    &__ul > * {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
     }
 }

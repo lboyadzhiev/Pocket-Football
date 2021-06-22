@@ -33,8 +33,6 @@
         }
     }
     &__item {
-        list-style: none;
-
         @media only screen and (max-width: $bg-small) {
             width: 100%;
             text-align: center;
@@ -43,7 +41,6 @@
     }
 
     &__link {
-        text-decoration: none;
         color: var(--color-light);
         font-size: 1.5rem;
         font-weight: 300;
