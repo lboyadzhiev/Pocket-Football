@@ -21,65 +21,81 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <div id="user">
-                    <ul class="nav-el">
-                        <div class="nav-el__div">
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">My games</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Publick games</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">PocketFEED</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Tournaments</a>
-                            </li>
-                        </div>
+                <div class="show">
+                    <div id="user">
+                        <ul class="nav-el">
+                            <div class="nav-el__div">
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">My games</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">Publick games</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">PocketFEED</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">Tournaments</a>
+                                </li>
+                            </div>
 
-                        <div class="nav-el__div">
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link nav-el__user-name" id="welcome"></a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a id="logoutBtn" href="/" class="nav-el__link">Logout</a>
-                            </li>
-                        </div>
-                    </ul>
+                            <div class="nav-el__div">
+                                <li class="nav-el__item">
+                                    <a
+                                        href="#"
+                                        class="nav-el__link nav-el__user-name"
+                                        id="welcome"
+                                    ></a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a id="logoutBtn" href="/" class="nav-el__link">Logout</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="quest">
+                        <ul class="nav-el">
+                            <div class="nav-el__div">
+                                <li class="nav-el__item">
+                                    <a href="/" class="nav-el__link">Home</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">Publick games</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">PocketFEED</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="#" class="nav-el__link">Tournaments</a>
+                                </li>
+                            </div>
+
+                            <div class="nav-el__div">
+                                <li class="nav-el__item">
+                                    <a href="/login" class="nav-el__link">Login</a>
+                                </li>
+                                <li class="nav-el__item">
+                                    <a href="/register" class="nav-el__link">Sign Up</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div id="quest">
-                    <ul class="nav-el">
-                        <div class="nav-el__div">
-                            <li class="nav-el__item">
-                                <a href="/" class="nav-el__link">Home</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Publick games</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">PocketFEED</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="#" class="nav-el__link">Tournaments</a>
-                            </li>
-                        </div>
-
-                        <div class="nav-el__div">
-                            <li class="nav-el__item">
-                                <a href="/login" class="nav-el__link">Login</a>
-                            </li>
-                            <li class="nav-el__item">
-                                <a href="/register" class="nav-el__link">Sign Up</a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-
                 <span class="menu-bar"><i class="fas fa-bars"></i></span>
             </nav>
         </header>
 
         <div id="container"></div>
+
+        <section class="myProfile-section">
+            <div class="profile">
+                <div class="profile__player-info">Player ifno</div>
+                <div class="profile__info">
+                    <div class="profile__info--personal">Personal info</div>
+                    <div class="profile__info--game">Game info</div>
+                </div>
+            </div>
+            <button class="btn-form">Edit my profile</button>
+        </section>
     </body>
 </html>

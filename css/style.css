@@ -30,12 +30,20 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 :root {
   --color-primary-blue: #023047;
   --color-primary-green: rgb(20, 141, 20);
   --color-white: #fff;
   --color-light: #fffff2;
-  --color-grey: #edf2f4; }
+  --color-grey: #edf2f4;
+  --border: 1.5rem;
+  --shadow: 2px 1px 5px var(--color-primary-blue); }
 
 * {
   margin: 0;
@@ -54,7 +62,7 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   background-color: var(--color-light); }
 
 .navbar {
@@ -64,6 +72,10 @@ body {
     .navbar {
       padding-top: 3rem; } }
 
+@media only screen and (max-width: 31.25em) {
+  .show {
+    display: none; } }
+
 .nav-el {
   display: flex;
   justify-content: space-between; }
@@ -72,16 +84,18 @@ body {
     justify-content: space-between; }
   @media only screen and (max-width: 45em) {
     .nav-el {
+      display: block; } }
+  @media only screen and (max-width: 45em) {
+    .nav-el__div {
       display: flex;
-      flex-direction: column-reverse; } }
+      flex-direction: column; } }
   .nav-el__item {
     list-style: none; }
     @media only screen and (max-width: 45em) {
       .nav-el__item {
         width: 100%;
         text-align: center;
-        padding: 2rem;
-        display: none; } }
+        padding: 2rem; } }
   .nav-el__link {
     text-decoration: none;
     color: var(--color-light);
@@ -178,7 +192,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  animation-name: moveFromBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
   @media only screen and (max-width: 68.75em) {
     .form {
       width: 60%; } }
@@ -238,6 +255,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 31.25em) {
+      .login-form__items {
+        display: flex;
+        flex-direction: column; } }
   .login-form__item {
     display: inline-block;
     background-color: var(--color-primary-light);
@@ -284,50 +305,6 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in; }
 
-.profile {
-  background-color: var(--color-grey);
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  padding: 5rem;
-  border-radius: 2rem;
-  padding: 4rem 2.5rem; }
-  .profile__card {
-    flex: 0 0 45%;
-    background-color: var(--color-light);
-    border-radius: 2rem;
-    box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
-  .profile__card-img {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: 50%;
-    margin: 2rem auto;
-    box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
-    .profile__card-img img {
-      width: 15rem;
-      height: 15rem;
-      flex: 0 0 40%; }
-    .profile__card-img div {
-      flex: 0 0 50%; }
-  .profile__info {
-    background-color: var(--color-grey) !important;
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column; }
-    .profile__info * {
-      background-color: var(--color-light);
-      border-radius: 2rem;
-      box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
-  .profile__info-personal {
-    flex: 0 0 45%; }
-  .profile__info-game {
-    flex: 0 0 45%; }
-
 .errMsg {
   color: red; }
 
@@ -369,13 +346,44 @@ body {
   background-color: var(--color-primary-blue);
   padding: 2rem; }
 
-.myGame-section {
+.myProfile-section {
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: auto; }
+
+.profile {
+  height: 70vh;
+  width: 75vw;
+  margin-top: 3rem;
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: var(--border); }
+  .profile__player-info {
+    background-color: orangered;
+    height: 50vh;
+    width: 35vw;
+    border-radius: var(--border);
+    box-shadow: var(--shadow); }
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    width: 35vw; }
+    .profile__info > * {
+      border-radius: var(--border);
+      box-shadow: var(--shadow); }
+    .profile__info--personal {
+      background-color: blueviolet;
+      height: 24vh; }
+    .profile__info--game {
+      background-color: yellowgreen;
+      height: 24vh; }
 
 .heading-primary {
   color: var(--color-primary-blue);

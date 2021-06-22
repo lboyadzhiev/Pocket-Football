@@ -7,6 +7,12 @@
     }
 }
 
+@media only screen and (max-width: $bg-smallest) {
+    .show {
+        display: none;
+    }
+}
+
 .nav-el {
     display: flex;
     justify-content: space-between;
@@ -17,10 +23,15 @@
     }
 
     @media only screen and (max-width: $bg-small) {
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
     }
 
+    &__div {
+        @media only screen and (max-width: $bg-small) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     &__item {
         list-style: none;
 
@@ -28,7 +39,6 @@
             width: 100%;
             text-align: center;
             padding: 2rem;
-            display: none;
         }
     }
 
@@ -158,6 +168,10 @@
     align-items: center;
     margin-top: 2rem;
 
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
     @media only screen and (max-width: $bg-large) {
         width: 60%;
     }
@@ -232,6 +246,11 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bg-smallest) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__item {
         display: inline-block;
@@ -290,66 +309,6 @@
     animation-name: moveInBottom;
     animation-duration: 2s;
     animation-timing-function: ease-in;
-}
-.profile {
-    background-color: var(--color-grey);
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem;
-    border-radius: 2rem;
-    padding: 4rem 2.5rem;
-
-    &__card {
-        flex: 0 0 45%;
-        background-color: var(--color-light);
-        border-radius: 2rem;
-        box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
-    }
-
-    &__card-img {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        height: 50%;
-        margin: 2rem auto;
-        box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
-
-        & img {
-            width: 15rem;
-            height: 15rem;
-            flex: 0 0 40%;
-        }
-
-        & div {
-            flex: 0 0 50%;
-        }
-    }
-
-    &__info {
-        background-color: var(--color-grey) !important;
-        flex: 0 0 50%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-
-        * {
-            background-color: var(--color-light);
-            border-radius: 2rem;
-            box-shadow: -0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
-        }
-    }
-
-    &__info-personal {
-        flex: 0 0 45%;
-    }
-
-    &__info-game {
-        flex: 0 0 45%;
-    }
 }
 
 .errMsg {

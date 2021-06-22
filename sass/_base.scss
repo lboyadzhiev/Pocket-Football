@@ -1,11 +1,14 @@
 :root {
-  --color-primary-blue: #023047;
-  // --color-primary-green: #5fad41;
-  --color-primary-green: rgb(20, 141, 20);
-  --color-white: #fff;
-  --color-light: #fffff2;
+    --color-primary-blue: #023047;
+    // --color-primary-green: #5fad41;
+    --color-primary-green: rgb(20, 141, 20);
+    --color-white: #fff;
+    --color-light: #fffff2;
 
-  --color-grey: #edf2f4;
+    --color-grey: #edf2f4;
+
+    --border: 1.5rem;
+    --shadow: 2px 1px 5px var(--color-primary-blue);
 }
 
 $bg-largest: 75em; // 1200 px
@@ -15,26 +18,26 @@ $bg-small: 45em; // 720 px
 $bg-smallest: 31.25em; // 500 px
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
 
-  @media only screen and (max-width: $bg-large) {
-    font-size: 50%;
-  }
+    @media only screen and (max-width: $bg-large) {
+        font-size: 50%;
+    }
 }
 
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: var(--color-light);
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    background-color: var(--color-light);
 }

@@ -1,0 +1,43 @@
+.profile {
+    height: 70vh;
+    width: 75vw;
+    margin-top: 3rem;
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: var(--border);
+
+    &__player-info {
+        background-color: orangered;
+        height: 50vh;
+        width: 35vw;
+        border-radius: var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 50vh;
+        width: 35vw;
+
+        & > * {
+            border-radius: var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        &--personal {
+            background-color: blueviolet;
+            height: 24vh;
+        }
+
+        &--game {
+            background-color: yellowgreen;
+            height: 24vh;
+        }
+    }
+}
