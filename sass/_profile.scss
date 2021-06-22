@@ -1,13 +1,18 @@
 .profile {
     height: 70vh;
     width: 75vw;
+
     margin-top: 3rem;
     background-color: var(--color-grey);
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     border-radius: var(--border);
+
+    @media only screen and (max-width: $bg-small) {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__player-info {
         background-color: orangered;
@@ -15,12 +20,21 @@
         width: 35vw;
         border-radius: var(--border);
         box-shadow: var(--shadow);
+
+        @media only screen and (max-width: $bg-small) {
+            width: 75vw;
+            margin-bottom: 1rem;
+        }
     }
 
     &__info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media only screen and (max-width: $bg-small) {
+            width: 75vw;
+        }
 
         height: 50vh;
         width: 35vw;
@@ -33,11 +47,20 @@
         &--personal {
             background-color: blueviolet;
             height: 24vh;
+
+            @media only screen and (max-width: $bg-small) {
+                height: 20vh;
+                margin-bottom: 1rem;
+            }
         }
 
         &--game {
             background-color: yellowgreen;
             height: 24vh;
+
+            @media only screen and (max-width: $bg-small) {
+                height: 20vh;
+            }
         }
     }
 }

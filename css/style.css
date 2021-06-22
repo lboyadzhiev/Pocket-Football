@@ -363,27 +363,45 @@ body {
   justify-content: space-around;
   align-items: center;
   border-radius: var(--border); }
+  @media only screen and (max-width: 45em) {
+    .profile {
+      display: flex;
+      flex-direction: column; } }
   .profile__player-info {
     background-color: orangered;
     height: 50vh;
     width: 35vw;
     border-radius: var(--border);
     box-shadow: var(--shadow); }
+    @media only screen and (max-width: 45em) {
+      .profile__player-info {
+        width: 75vw;
+        margin-bottom: 1rem; } }
   .profile__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 50vh;
     width: 35vw; }
+    @media only screen and (max-width: 45em) {
+      .profile__info {
+        width: 75vw; } }
     .profile__info > * {
       border-radius: var(--border);
       box-shadow: var(--shadow); }
     .profile__info--personal {
       background-color: blueviolet;
       height: 24vh; }
+      @media only screen and (max-width: 45em) {
+        .profile__info--personal {
+          height: 20vh;
+          margin-bottom: 1rem; } }
     .profile__info--game {
       background-color: yellowgreen;
       height: 24vh; }
+      @media only screen and (max-width: 45em) {
+        .profile__info--game {
+          height: 20vh; } }
 
 .heading-primary {
   color: var(--color-primary-blue);
