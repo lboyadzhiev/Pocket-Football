@@ -78,7 +78,7 @@ a {
     .navbar {
       padding-top: 3rem; } }
 
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 45em) {
   .show {
     display: none; } }
 
