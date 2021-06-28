@@ -1,3 +1,12 @@
+.myProfile-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
 .profile {
     height: 70vh;
     width: 75vw;

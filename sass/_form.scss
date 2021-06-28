@@ -1,0 +1,172 @@
+.form-section {
+    // background-image: url(https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    // background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.btn-form {
+    margin: 2rem;
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    border-radius: 5px;
+    background-color: var(--color-primary-green);
+    color: var(--color-light);
+    border: none;
+    cursor: pointer;
+
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+    &:hover {
+        background-color: var(--color-primary-blue);
+        color: var(--color-light);
+
+        box-sizing: border-box;
+    }
+}
+
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+    @media only screen and (max-width: $bg-large) {
+        width: 60%;
+    }
+    @media only screen and (max-width: $bg-medium) {
+        width: 90%;
+    }
+
+    &__label {
+        font-size: 2rem;
+        margin: 1rem;
+        cursor: pointer;
+        color: var(--color-primary-blue);
+    }
+
+    &__item {
+        background-color: var(--color-grey);
+        font-family: inherit;
+        font-size: 1.8rem;
+        padding: 2rem 2rem;
+        color: var(--color-primary-blue);
+        border: none;
+        border-radius: 10px;
+        border-bottom: 1px solid var(--color-primary-blue);
+        display: block;
+        transition: all 0.3s;
+        width: 70%;
+
+        @media only screen and (max-width: $bg-large) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: $bg-medium) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bg-smallest) {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, 0.1);
+            border-bottom: 3px solid (var(--color-primary-green));
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
+    }
+}
+
+.login-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    margin: 2rem auto;
+    position: relative;
+    align-items: center;
+
+    @media only screen and (max-width: $bg-medium) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width: $bg-smallest) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bg-smallest) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        display: inline-block;
+        background-color: var(--color-primary-light);
+        padding: 1.5rem 2rem;
+        border: none;
+        border-bottom: 1px solid var(--color-primary-blue);
+        width: 45%;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        color: var(--color-primary-blue);
+        text-align: center;
+
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+
+        @media only screen and (max-width: $bg-medium) {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $bg-smallest) {
+            width: 90%;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn-login {
+        margin: 2rem;
+        font-size: 2rem;
+        padding: 1rem 6rem;
+        border-radius: 5px;
+        background-color: var(--color-primary-green);
+        color: var(--color-light);
+        border: none;
+        cursor: pointer;
+        width: 30%;
+    }
+    &__item::placeholder {
+        text-align: center;
+    }
+}
+
+.login-with {
+    margin-top: 3rem;
+}

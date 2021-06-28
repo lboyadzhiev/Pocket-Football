@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    background-color: var(--color-primary-blue);
+}
+
+.navbar {
+    position: relative;
+    width: 100vw;
+
+    @media only screen and (max-width: $bg-small) {
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: $bg-small) {
+    .show {
+        display: none;
+    }
+}
+
+.nav-el {
+    display: flex;
+    justify-content: space-between;
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media only screen and (max-width: $bg-small) {
+        display: block;
+    }
+
+    &__div {
+        @media only screen and (max-width: $bg-small) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        @media only screen and (max-width: $bg-small) {
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+        }
+    }
+
+    &__link {
+        color: var(--color-light);
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 1.5rem;
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid var(--color-primary-green);
+        }
+
+        @media only screen and (max-width: $bg-small) {
+            font-size: 2rem;
+        }
+    }
+
+    &__user-name {
+        font-weight: 500;
+        color: var(--color-white);
+
+        @media only screen and (max-width: $bg-small) {
+            display: block;
+            position: absolute;
+            top: -0.5rem;
+            left: 1rem;
+        }
+    }
+}
+
+.menu-bar {
+    font-size: 4rem;
+    color: var(--color-light);
+    position: absolute;
+    right: 2rem;
+    top: -0.5rem;
+    display: none;
+
+    @media only screen and (max-width: $bg-small) {
+        display: block;
+    }
+}
