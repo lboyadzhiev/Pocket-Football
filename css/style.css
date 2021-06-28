@@ -71,66 +71,6 @@ ul {
 a {
   text-decoration: none; }
 
-.navbar {
-  position: relative;
-  width: 100vw; }
-  @media only screen and (max-width: 45em) {
-    .navbar {
-      padding-top: 3rem; } }
-
-@media only screen and (max-width: 45em) {
-  .show {
-    display: none; } }
-
-.nav-el {
-  display: flex;
-  justify-content: space-between; }
-  .nav-el__div {
-    display: flex;
-    justify-content: space-between; }
-  @media only screen and (max-width: 45em) {
-    .nav-el {
-      display: block; } }
-  @media only screen and (max-width: 45em) {
-    .nav-el__div {
-      display: flex;
-      flex-direction: column; } }
-  @media only screen and (max-width: 45em) {
-    .nav-el__item {
-      width: 100%;
-      text-align: center;
-      padding: 2rem; } }
-  .nav-el__link {
-    color: var(--color-light);
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding: 1.5rem; }
-    .nav-el__link:hover, .nav-el__link:active {
-      border-bottom: 2px solid var(--color-primary-green); }
-    @media only screen and (max-width: 45em) {
-      .nav-el__link {
-        font-size: 2rem; } }
-  .nav-el__user-name {
-    font-weight: 500;
-    color: var(--color-white); }
-    @media only screen and (max-width: 45em) {
-      .nav-el__user-name {
-        display: block;
-        position: absolute;
-        top: -0.5rem;
-        left: 1rem; } }
-
-.menu-bar {
-  font-size: 4rem;
-  color: var(--color-light);
-  position: absolute;
-  right: 2rem;
-  top: -0.5rem;
-  display: none; }
-  @media only screen and (max-width: 45em) {
-    .menu-bar {
-      display: block; } }
-
 .image {
   background-image: url("https://ronaldo.com/wp-content/uploads/2018/03/Natural-grass-vs.-artificial-grass.jpg");
   background-size: cover;
@@ -172,6 +112,27 @@ a {
 
 .btn:hover {
   background-color: var(--color-primary-green); }
+
+.fab {
+  font-size: 4rem;
+  color: var(--color-primary-blue);
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
+
+.errMsg {
+  color: red; }
+
+#btn-login {
+  position: absolute;
+  top: 2rem; }
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%; }
 
 .btn-form {
   margin: 2rem;
@@ -301,19 +262,11 @@ a {
 .login-with {
   margin-top: 3rem; }
 
-.fab {
-  font-size: 4rem;
-  color: var(--color-primary-blue);
-  animation-name: moveInBottom;
-  animation-duration: 2s;
-  animation-timing-function: ease-in; }
-
-.errMsg {
-  color: red; }
-
-#btn-login {
-  position: absolute;
-  top: 2rem; }
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary-blue);
+  padding: 2rem; }
 
 .header {
   display: flex;
@@ -322,32 +275,65 @@ a {
   padding-bottom: 2.5rem;
   background-color: var(--color-primary-blue); }
 
-.main-section {
-  width: 75vw;
-  height: 90vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  @media only screen and (max-width: 68.75em) {
-    .main-section {
-      width: 90vw; } }
+.navbar {
+  position: relative;
+  width: 100vw; }
   @media only screen and (max-width: 45em) {
-    .main-section {
-      width: 100vw; } }
+    .navbar {
+      padding-top: 3rem; } }
 
-.form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 100%; }
+@media only screen and (max-width: 45em) {
+  .show {
+    display: none; } }
 
-.main-footer {
+.nav-el {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--color-primary-blue);
-  padding: 2rem; }
+  justify-content: space-between; }
+  .nav-el__div {
+    display: flex;
+    justify-content: space-between; }
+  @media only screen and (max-width: 45em) {
+    .nav-el {
+      display: block; } }
+  @media only screen and (max-width: 45em) {
+    .nav-el__div {
+      display: flex;
+      flex-direction: column; } }
+  @media only screen and (max-width: 45em) {
+    .nav-el__item {
+      width: 100%;
+      text-align: center;
+      padding: 2rem; } }
+  .nav-el__link {
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1.5rem; }
+    .nav-el__link:hover, .nav-el__link:active {
+      border-bottom: 2px solid var(--color-primary-green); }
+    @media only screen and (max-width: 45em) {
+      .nav-el__link {
+        font-size: 2rem; } }
+  .nav-el__user-name {
+    font-weight: 500;
+    color: var(--color-white); }
+    @media only screen and (max-width: 45em) {
+      .nav-el__user-name {
+        display: block;
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem; } }
+
+.menu-bar {
+  font-size: 4rem;
+  color: var(--color-light);
+  position: absolute;
+  right: 2rem;
+  top: -0.5rem;
+  display: none; }
+  @media only screen and (max-width: 45em) {
+    .menu-bar {
+      display: block; } }
 
 .myProfile-section {
   height: 80vh;
@@ -370,6 +356,14 @@ a {
     .profile {
       display: flex;
       flex-direction: column; } }
+  .profile__ul {
+    padding: 1rem; }
+    .profile__ul li {
+      border-bottom: 1px solid var(--color-grey);
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      align-items: center;
+      column-gap: 1.5rem; }
   .profile__player-info {
     height: 50vh;
     width: 35vw;
@@ -381,6 +375,9 @@ a {
       .profile__player-info {
         width: 75vw;
         margin-bottom: 1rem; } }
+  .profile__icon {
+    width: 2.2rem;
+    height: 2.2rem; }
   .profile__img {
     display: flex;
     align-items: center;
