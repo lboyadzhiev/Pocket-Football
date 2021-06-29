@@ -21,7 +21,7 @@ const loginTemplate = (onSubmit) => html`
                         name="password"
                     />
                 </div>
-                <input type="submit" class="btn-form login-form__btn-login" value="Login" />
+                <input type="submit" class="btn-form" value="Login" />
             </form>
 
             <div class="login-with">

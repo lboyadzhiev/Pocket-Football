@@ -81,6 +81,11 @@
     bottom: 1rem;
     right: 1rem;
     transition: all 0.2s;
+    display: none;
+
+    @media only screen and (max-width: $bg-smallest) {
+        display: block;
+    }
 
     &:hover {
         transform: translateX(-1rem);

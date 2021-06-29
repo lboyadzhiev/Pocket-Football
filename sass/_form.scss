@@ -22,6 +22,10 @@
     animation-duration: 2s;
     animation-timing-function: ease-in;
 
+    @media only screen and (max-width: $bg-smallest) {
+        text-align: center;
+    }
+
     &:hover {
         background-color: var(--color-primary-blue);
         color: var(--color-light);
@@ -152,16 +156,19 @@
         }
     }
 
-    &__btn-login {
-        margin: 2rem;
-        font-size: 2rem;
-        padding: 1rem 6rem;
-        border-radius: 5px;
-        background-color: var(--color-primary-green);
-        color: var(--color-light);
-        border: none;
-        cursor: pointer;
-        width: 30%;
+    // &__btn-login {
+    //     margin: 2rem;
+    //     font-size: 2rem;
+    //     padding: 1rem 6rem;
+    //     border-radius: 5px;
+    //     background-color: var(--color-primary-green);
+    //     color: var(--color-light);
+    //     border: none;
+    //     cursor: pointer;
+    //     width: 30%;
+    // }
+
+    @media only screen and (max-width: $bg-smallest) {
     }
     &__item::placeholder {
         text-align: center;
