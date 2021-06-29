@@ -49,6 +49,7 @@
 
     &:hover {
         background-color: var(--color-primary-green);
+        box-shadow: var(--shadow);
     }
 }
 
@@ -68,4 +69,21 @@
 #btn-login {
     position: absolute;
     top: 2rem;
+}
+
+.arrow {
+    font-size: 5rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-primary-blue);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: translateX(-1rem);
+        color: var(--color-primary-green);
+    }
 }

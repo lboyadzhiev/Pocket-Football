@@ -78,7 +78,7 @@ a {
   height: 30vh;
   margin-top: 3rem;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .image {
       margin-top: 1rem; } }
 
@@ -111,7 +111,8 @@ a {
       display: none; } }
 
 .btn:hover {
-  background-color: var(--color-primary-green); }
+  background-color: var(--color-primary-green);
+  box-shadow: var(--shadow); }
 
 .fab {
   font-size: 4rem;
@@ -126,6 +127,20 @@ a {
 #btn-login {
   position: absolute;
   top: 2rem; }
+
+.arrow {
+  font-size: 5rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-primary-blue);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  transition: all 0.2s; }
+  .arrow:hover {
+    transform: translateX(-1rem);
+    color: var(--color-primary-green); }
 
 .form-section {
   display: flex;
@@ -149,7 +164,9 @@ a {
   .btn-form:hover {
     background-color: var(--color-primary-blue);
     color: var(--color-light);
-    box-sizing: border-box; }
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+    transform: translateY(-1px); }
 
 .form {
   width: 40%;
@@ -163,7 +180,7 @@ a {
   @media only screen and (max-width: 68.75em) {
     .form {
       width: 60%; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 60em) {
     .form {
       width: 90%; } }
   .form__label {
@@ -186,7 +203,7 @@ a {
     @media only screen and (max-width: 68.75em) {
       .form__item {
         width: 90%; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 60em) {
       .form__item {
         font-size: 2.5rem; } }
     @media only screen and (max-width: 31.25em) {
@@ -207,7 +224,7 @@ a {
   margin: 2rem auto;
   position: relative;
   align-items: center; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 60em) {
     .login-form {
       width: 90%; } }
   @media only screen and (max-width: 31.25em) {
@@ -237,7 +254,7 @@ a {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 60em) {
       .login-form__item {
         font-size: 2.5rem;
         margin-bottom: 3rem; } }
@@ -278,11 +295,11 @@ a {
 .navbar {
   position: relative;
   width: 100vw; }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .navbar {
       padding-top: 3rem; } }
 
-@media only screen and (max-width: 45em) {
+@media only screen and (max-width: 46.8em) {
   .show {
     display: none; } }
 
@@ -292,14 +309,14 @@ a {
   .nav-el__div {
     display: flex;
     justify-content: space-between; }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .nav-el {
       display: block; } }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .nav-el__div {
       display: flex;
       flex-direction: column; } }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .nav-el__item {
       width: 100%;
       text-align: center;
@@ -311,13 +328,13 @@ a {
     padding: 1.5rem; }
     .nav-el__link:hover, .nav-el__link:active {
       border-bottom: 2px solid var(--color-primary-green); }
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 46.8em) {
       .nav-el__link {
         font-size: 2rem; } }
   .nav-el__user-name {
     font-weight: 500;
     color: var(--color-white); }
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 46.8em) {
       .nav-el__user-name {
         display: block;
         position: absolute;
@@ -331,9 +348,16 @@ a {
   right: 2rem;
   top: -0.5rem;
   display: none; }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 46.8em) {
     .menu-bar {
       display: block; } }
+
+.main-section {
+  width: 80vw;
+  margin: 0 auto; }
+  @media only screen and (max-width: 60em) {
+    .main-section {
+      font-size: 50%; } }
 
 .myProfile-section {
   height: 80vh;
@@ -352,8 +376,9 @@ a {
   justify-content: space-around;
   align-items: center;
   border-radius: var(--border); }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 31.25em) {
     .profile {
+      width: 100vw;
       display: flex;
       flex-direction: column; } }
   .profile__ul {
@@ -371,11 +396,15 @@ a {
     border-radius: var(--border);
     box-shadow: var(--shadow);
     padding: 1rem; }
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 46.8em) {
       .profile__player-info {
-        width: 75vw;
-        margin-bottom: 1rem; } }
+        width: 30vw; } }
+    @media only screen and (max-width: 31.25em) {
+      .profile__player-info {
+        width: 90vw;
+        position: relative; } }
   .profile__icon {
+    fill: var(--color-primary-blue);
     width: 2.2rem;
     height: 2.2rem; }
   .profile__img {
@@ -397,25 +426,64 @@ a {
     justify-content: space-between;
     height: 50vh;
     width: 35vw; }
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 46.8em) {
       .profile__info {
-        width: 75vw; } }
+        width: 40vw; } }
+    @media only screen and (max-width: 31.25em) {
+      .profile__info {
+        display: none; } }
     .profile__info > * {
       border-radius: var(--border);
       box-shadow: var(--shadow); }
-    .profile__info--personal {
-      background-color: blueviolet;
-      height: 24vh; }
-      @media only screen and (max-width: 45em) {
-        .profile__info--personal {
-          height: 20vh;
-          margin-bottom: 1rem; } }
-    .profile__info--game {
-      background-color: yellowgreen;
-      height: 24vh; }
-      @media only screen and (max-width: 45em) {
-        .profile__info--game {
-          height: 20vh; } }
+  .profile__info-personal {
+    background-color: var(--color-white);
+    height: 24vh; }
+    @media only screen and (max-width: 46.8em) {
+      .profile__info-personal {
+        height: 20vh;
+        margin-bottom: 1rem; } }
+  .profile__info-game {
+    background-color: var(--color-white);
+    height: 24vh;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 60em) {
+      .profile__info-game {
+        font-size: 50%; } }
+    @media only screen and (max-width: 46.8em) {
+      .profile__info-game {
+        height: 30vh; } }
+  .profile__info-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 1.5rem;
+    width: 15vw; }
+    @media only screen and (max-width: 60em) {
+      .profile__info-btns {
+        width: 10vw; } }
+    @media only screen and (max-width: 46.8em) {
+      .profile__info-btns {
+        width: 14vw; } }
+    .profile__info-btns > * {
+      font-size: 1.4rem;
+      color: #000;
+      padding: 1rem;
+      border: 1px solid var(--color-primary-blue);
+      border-radius: 1rem;
+      text-align: center;
+      transition: all 0.2s; }
+      .profile__info-btns > *:hover {
+        background-color: var(--color-primary-blue);
+        color: var(--color-light);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow); }
+  .profile__info-text {
+    text-align: center;
+    margin: -1rem 1rem; }
+    @media only screen and (max-width: 46.8em) {
+      .profile__info-text {
+        margin-top: 1rem; } }
   .profile__ul > * {
     font-size: 1.5rem;
     margin-top: 1.5rem; }
@@ -431,13 +499,14 @@ a {
     font-weight: 400;
     letter-spacing: 3.5rem;
     margin-bottom: 3rem;
+    text-align: center;
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 60em) {
       .heading-primary--main {
         font-size: 3.2rem; } }
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 46.8em) {
       .heading-primary--main {
         font-size: 3.2s;
         text-align: center;
@@ -452,7 +521,7 @@ a {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 60em) {
       .heading-primary--sub {
         font-size: 2.2rem; } }
 
@@ -470,7 +539,7 @@ a {
   padding: 2rem;
   color: var(--color-primary-blue);
   font-size: 2.5rem; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 60em) {
     .heading-tertiary {
       font-size: 3rem; } }
   @media only screen and (max-width: 31.25em) {

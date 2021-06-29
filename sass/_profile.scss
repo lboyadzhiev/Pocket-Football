@@ -18,7 +18,8 @@
     align-items: center;
     border-radius: var(--border);
 
-    @media only screen and (max-width: $bg-small) {
+    @media only screen and (max-width: $bg-smallest) {
+        width: 100vw;
         display: flex;
         flex-direction: column;
     }
@@ -44,12 +45,17 @@
         padding: 1rem;
 
         @media only screen and (max-width: $bg-small) {
-            width: 75vw;
-            margin-bottom: 1rem;
+            width: 30vw;
+        }
+
+        @media only screen and (max-width: $bg-smallest) {
+            width: 90vw;
+            position: relative;
         }
     }
 
     &__icon {
+        fill: var(--color-primary-blue);
         width: 2.2rem;
         height: 2.2rem;
     }
@@ -80,35 +86,87 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @media only screen and (max-width: $bg-small) {
-            width: 75vw;
-        }
-
         height: 50vh;
         width: 35vw;
+
+        @media only screen and (max-width: $bg-small) {
+            width: 40vw;
+        }
+
+        @media only screen and (max-width: $bg-smallest) {
+            display: none;
+        }
 
         & > * {
             border-radius: var(--border);
             box-shadow: var(--shadow);
         }
+    }
 
-        &--personal {
-            background-color: blueviolet;
-            height: 24vh;
+    &__info-personal {
+        background-color: var(--color-white);
+        height: 24vh;
 
-            @media only screen and (max-width: $bg-small) {
-                height: 20vh;
-                margin-bottom: 1rem;
-            }
+        @media only screen and (max-width: $bg-small) {
+            height: 20vh;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__info-game {
+        background-color: var(--color-white);
+        height: 24vh;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bg-medium) {
+            font-size: 50%;
         }
 
-        &--game {
-            background-color: yellowgreen;
-            height: 24vh;
+        @media only screen and (max-width: $bg-small) {
+            height: 30vh;
+        }
+    }
 
-            @media only screen and (max-width: $bg-small) {
-                height: 20vh;
+    &__info-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 1.5rem;
+        width: 15vw;
+
+        @media only screen and (max-width: $bg-medium) {
+            width: 10vw;
+        }
+
+        @media only screen and (max-width: $bg-small) {
+            width: 14vw;
+        }
+
+        & > * {
+            font-size: 1.4rem;
+            color: #000;
+            padding: 1rem;
+            border: 1px solid var(--color-primary-blue);
+            border-radius: 1rem;
+            text-align: center;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: var(--color-primary-blue);
+                color: var(--color-light);
+                transform: translateY(-3px);
+                box-shadow: var(--shadow);
             }
+        }
+    }
+
+    &__info-text {
+        text-align: center;
+        margin: -1rem 1rem;
+
+        @media only screen and (max-width: $bg-small) {
+            margin-top: 1rem;
         }
     }
 

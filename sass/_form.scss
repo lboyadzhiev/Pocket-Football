@@ -25,8 +25,9 @@
     &:hover {
         background-color: var(--color-primary-blue);
         color: var(--color-light);
-
+        box-shadow: var(--shadow);
         box-sizing: border-box;
+        transform: translateY(-1px);
     }
 }
 
