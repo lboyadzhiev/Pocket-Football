@@ -6,40 +6,34 @@
     background-color: var(--color-primary-blue);
 }
 
-.navbar {
+.nav {
     position: relative;
     width: 100vw;
 
     @media only screen and (max-width: $bg-small) {
         padding-top: 3rem;
     }
-}
 
-@media only screen and (max-width: $bg-small) {
-    .show {
-        display: none;
+    &__menu {
+        @media only screen and (max-width: $bg-small) {
+            display: none;
+        }
     }
-}
-
-.nav-el {
-    display: flex;
-    justify-content: space-between;
-
-    &__div {
+    &__list {
         display: flex;
         justify-content: space-between;
     }
 
-    @media only screen and (max-width: $bg-small) {
-        display: block;
-    }
-
     &__div {
+        display: flex;
+        justify-content: space-between;
+
         @media only screen and (max-width: $bg-small) {
             display: flex;
             flex-direction: column;
         }
     }
+
     &__item {
         @media only screen and (max-width: $bg-small) {
             width: 100%;

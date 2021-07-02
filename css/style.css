@@ -289,50 +289,45 @@ a {
   padding-bottom: 2.5rem;
   background-color: var(--color-primary-blue); }
 
-.navbar {
+.nav {
   position: relative;
   width: 100vw; }
   @media only screen and (max-width: 46.8em) {
-    .navbar {
+    .nav {
       padding-top: 3rem; } }
-
-@media only screen and (max-width: 46.8em) {
-  .show {
-    display: none; } }
-
-.nav-el {
-  display: flex;
-  justify-content: space-between; }
-  .nav-el__div {
+  @media only screen and (max-width: 46.8em) {
+    .nav__menu {
+      display: none; } }
+  .nav__list {
     display: flex;
     justify-content: space-between; }
+  .nav__div {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 46.8em) {
+      .nav__div {
+        display: flex;
+        flex-direction: column; } }
   @media only screen and (max-width: 46.8em) {
-    .nav-el {
-      display: block; } }
-  @media only screen and (max-width: 46.8em) {
-    .nav-el__div {
-      display: flex;
-      flex-direction: column; } }
-  @media only screen and (max-width: 46.8em) {
-    .nav-el__item {
+    .nav__item {
       width: 100%;
       text-align: center;
       padding: 2rem; } }
-  .nav-el__link {
+  .nav__link {
     color: var(--color-light);
     font-size: 1.5rem;
     font-weight: 300;
     padding: 1.5rem; }
-    .nav-el__link:hover, .nav-el__link:active {
+    .nav__link:hover, .nav__link:active {
       border-bottom: 2px solid var(--color-primary-green); }
     @media only screen and (max-width: 46.8em) {
-      .nav-el__link {
+      .nav__link {
         font-size: 2rem; } }
-  .nav-el__user-name {
+  .nav__user-name {
     font-weight: 500;
     color: var(--color-white); }
     @media only screen and (max-width: 46.8em) {
-      .nav-el__user-name {
+      .nav__user-name {
         display: block;
         position: absolute;
         top: -0.5rem;

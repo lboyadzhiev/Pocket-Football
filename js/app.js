@@ -60,21 +60,3 @@ function setUserNav() {
         document.getElementById('quest').style.display = 'block';
     }
 }
-
-let button = document.querySelector('.menu-bar');
-let div = document.querySelector('.show');
-// div.style.display = 'none';
-
-button.addEventListener('click', toggle);
-
-function toggle() {
-    if (div.style.display === 'none') {
-        div.style.display = 'block';
-    } else {
-        div.style.display = 'none';
-    }
-}
-
-document.querySelector('.nav-el').addEventListener('click', (event) => {
-    console.log(event);
-});
