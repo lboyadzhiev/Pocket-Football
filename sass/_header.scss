@@ -22,6 +22,11 @@
     &__list {
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width: $bg-small) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__div {
@@ -82,4 +87,8 @@
     @media only screen and (max-width: $bg-small) {
         display: block;
     }
+}
+
+.show-menu {
+    display: block;
 }

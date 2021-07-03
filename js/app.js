@@ -60,3 +60,23 @@ function setUserNav() {
         document.getElementById('quest').style.display = 'block';
     }
 }
+
+// nav responsive
+
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('menu-bar');
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        const array = navMenu.classList;
+        if (array.contains('show-menu')) {
+            navMenu.classList.remove('show-menu');
+        } else {
+            navMenu.classList.add('show-menu');
+        }
+    });
+}
+
+const navigation = document.querySelectorAll('.nav__link');
+
+navigation.forEach((n) => n.addEventListener(e)('click', (e) => if(e.target ===)))
