@@ -78,5 +78,3 @@ if (navToggle) {
 }
 
 const navigation = document.querySelectorAll('.nav__link');
-
-navigation.forEach((n) => n.addEventListener(e)('click', (e) => if(e.target ===)))
