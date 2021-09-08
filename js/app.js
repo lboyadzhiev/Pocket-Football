@@ -65,16 +65,21 @@ function setUserNav() {
 
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('menu-bar');
+const navLink = document.querySelectorAll('.nav__link');
 
 if (navToggle) {
+    const array = navMenu.classList;
     navToggle.addEventListener('click', () => {
-        const array = navMenu.classList;
         if (array.contains('show-menu')) {
             navMenu.classList.remove('show-menu');
         } else {
             navMenu.classList.add('show-menu');
         }
     });
-}
 
-const navigation = document.querySelectorAll('.nav__link');
+    for (let i = 0; i < navLink.length; i++) {
+        navLink[i].addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+        });
+    }
+}

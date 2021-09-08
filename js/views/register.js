@@ -3,7 +3,7 @@ import { register } from '../api/data.js';
 
 const registerTemplate = (onSubmit) => html`
     <section class="form-section">
-        <h2 class="heading-tertiary">Register to start your pocket football journey</h2>
+        <h2 class="heading-tertiary">Sign Up</h2>
 
         <form @submit=${onSubmit} class="form">
             <label for="firstName" class="form__label">First Name</label>

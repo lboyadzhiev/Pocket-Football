@@ -21,7 +21,7 @@
         }
 
         @media only screen and (max-width: $bg-small) {
-            font-size: 3.2s;
+            font-size: 3.2rem;
             text-align: center;
             letter-spacing: normal;
         }
@@ -67,6 +67,6 @@
     }
 
     @media only screen and (max-width: $bg-smallest) {
-        text-align: center;
+        display: none;
     }
 }
