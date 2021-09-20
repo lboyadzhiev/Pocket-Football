@@ -1,6 +1,6 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 
-const homeTemplate = (click) => html`
+const homeTemplate = () => html`
     <main class="main-section">
         <div class="image"></div>
         <div id="homeContent">${headingTemplate()}</div>
