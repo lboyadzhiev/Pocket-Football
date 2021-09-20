@@ -1,5 +1,6 @@
 import page from '../node_modules/page/page.mjs';
 import { render } from '../node_modules/lit-html/lit-html.js';
+import { logout } from './api/data.js';
 
 export function getOptions(method = 'get', body) {
     const options = {
@@ -39,4 +40,11 @@ export function renderMiddleware(ctx, next) {
     ctx.render = (content) => render(content, main);
     ctx.setUserNav = setUserNav;
     next();
+}
+
+export async function logoutApi() {
+    await logout();
+
+    setUserNav();
+    page.redirect('/');
 }

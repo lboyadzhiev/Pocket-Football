@@ -6,9 +6,6 @@ const registerTemplate = (onSubmit) => html`
         <h2 class="heading-tertiary">Sign Up</h2>
 
         <form @submit=${onSubmit} class="form">
-            <label for="firstName" class="form__label">First Name</label>
-            <input type="text" id="firstName" class="form__item" name="username" required />
-
             <!-- <label for="lastName" class="form__label">Last Name</label>
 <input type="text" id="lastName" class="form__item" required> -->
 
@@ -33,12 +30,11 @@ export async function registerPage(ctx) {
         event.preventDefault();
 
         const formData = new FormData(event.target);
-        const username = formData.get('username');
         const email = formData.get('email');
         const password = formData.get('password');
         const rePass = formData.get('repass');
 
-        await register(username, email, password);
+        await register(email, password);
 
         ctx.setUserNav();
         ctx.page.redirect('/home');

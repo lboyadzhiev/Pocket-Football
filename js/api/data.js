@@ -22,4 +22,15 @@ export async function logout() {
     return result;
 }
 
-export const register = api.register;
+export async function register(email, password) {
+    const result = await api.post(host + '/users/register', {
+        email,
+        password,
+    });
+
+    sessionStorage.setItem('email', result.email);
+    sessionStorage.setItem('authToken', result.accessToken);
+    sessionStorage.setItem('userId', result._id);
+
+    return result;
+}

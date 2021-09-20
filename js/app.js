@@ -1,7 +1,7 @@
 import page from '../node_modules/page/page.mjs';
 import { render } from '../node_modules/lit-html/lit-html.js';
 
-import { setUserNav } from './utilities.js';
+import { logoutApi, setUserNav } from './utilities.js';
 import { renderMiddleware } from './utilities.js';
 import { homePage } from './views/home.js';
 import { publickGamesPage } from './views/publickGames.js';
@@ -14,7 +14,6 @@ import { detailsPage } from './views/details.js';
 import { editPage } from './views/edit.js';
 import { myGamesPage } from './views/myGames.js';
 import { pocketPage } from './views/pocket.js';
-import { logout } from './api/data.js';
 
 import * as api from './api/api.js';
 window.api = api;
@@ -32,12 +31,7 @@ page('/edit/:id', renderMiddleware, editPage);
 page('/my-games', renderMiddleware, myGamesPage);
 page('/pocket', renderMiddleware, pocketPage);
 
-document.getElementById('logoutBtn').addEventListener('click', async () => {
-    await logout();
-
-    setUserNav();
-    page.redirect('/');
-});
+document.getElementById('logoutBtn').addEventListener('click', logoutApi);
 
 setUserNav();
 page.start();

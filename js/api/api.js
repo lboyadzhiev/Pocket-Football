@@ -36,13 +36,3 @@ export async function put(url, data) {
 export async function del(url) {
     return await request(url, getOptions('delete'));
 }
-
-export async function register(username, email, password) {
-    const result = await post(settings.host + '/users', { username, email, password });
-
-    sessionStorage.setItem('username', username);
-    sessionStorage.setItem('authToken', result.sessionToken);
-    sessionStorage.setItem('userId', result.objectId);
-
-    return result;
-}
