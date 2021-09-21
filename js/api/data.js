@@ -34,3 +34,7 @@ export async function register(email, password) {
 
     return result;
 }
+
+export async function getProfile(id) {
+    return Object.values(await api.get(host + '/jsonstore/profile/' + id));
+}

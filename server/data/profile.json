@@ -1,0 +1,31 @@
+{
+    "0": {
+        "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+        "username": "chriss",
+        "age": "25",
+        "position": "goal ceeper",
+        "rang": "professional",
+        "timeResponse": "date",
+        "phone": "+359893544822",
+        "playedGames": "12",
+        "organizedGames": "5",
+        "discipline": "12",
+        "imageUrl": "/images/CoverFire.png",
+        "_id": "0"
+    },
+
+    "1": {
+        "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+        "username": "chriss",
+        "age": "25",
+        "position": "goal ceeper",
+        "rang": "professional",
+        "timeResponse": "date",
+        "phone": "+359893544822",
+        "playedGames": "12",
+        "organizedGames": "5",
+        "discipline": "12",
+        "imageUrl": "/images/CoverFire.png",
+        "_id": "1"
+    }
+}
