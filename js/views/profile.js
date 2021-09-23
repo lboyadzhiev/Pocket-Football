@@ -116,7 +116,5 @@ export async function profilePage(ctx) {
     const userId = sessionStorage.getItem('userId');
     const item = await getProfile(userId);
 
-    console.log(item);
-    return;
-    ctx.render(profileTemplate());
+    ctx.render(profileTemplate(item));
 }

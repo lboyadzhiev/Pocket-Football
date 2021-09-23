@@ -36,5 +36,5 @@ export async function register(email, password) {
 }
 
 export async function getProfile(id) {
-    return Object.values(await api.get(host + '/jsonstore/profile/' + id));
+    return await api.get(host + '/jsonstore/profile/' + id);
 }
