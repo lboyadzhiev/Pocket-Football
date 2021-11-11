@@ -1,13 +1,12 @@
 import * as api from './api.js';
 
 const host = 'http://localhost:3030';
+const hostJava = 'http://localhost:8080';
 
-export async function login(email, password) {
-    const result = await api.post(host + '/users/login', { email, password });
+export async function login(username, password) {
+    const result = await api.post(hostJava + '/authenticate', { username, password });
 
-    sessionStorage.setItem('email', result.email);
-    sessionStorage.setItem('authToken', result.accessToken);
-    sessionStorage.setItem('userId', result._id);
+    sessionStorage.setItem('key', result.jwt);
 
     return result;
 }
