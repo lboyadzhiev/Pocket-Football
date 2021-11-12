@@ -27,7 +27,7 @@ page('/login', renderMiddleware, loginPage);
 page('/profile', renderMiddleware, profilePage);
 page('/create', renderMiddleware, createPage);
 page('/details/:id', renderMiddleware, detailsPage);
-page('/edit/:id', renderMiddleware, editPage);
+page('/edit', renderMiddleware, editPage);
 page('/my-games', renderMiddleware, myGamesPage);
 page('/pocket', renderMiddleware, pocketPage);
 

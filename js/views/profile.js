@@ -108,7 +108,7 @@ const profileTemplate = (item) => html`
                 </div>
             </div>
 
-            <a href="#" class="btn-form">Edit my profile</a>
+            <a href="/edit" class="btn-form">Edit my profile</a>
         </section>
 `;
 
