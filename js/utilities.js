@@ -23,10 +23,10 @@ export function getOptions(method = 'get', body) {
 }
 
 export function setUserNav() {
-    const email = sessionStorage.getItem('email');
+    const username = sessionStorage.getItem('username');
 
-    if (email != null) {
-        document.getElementById('welcome').textContent = `Welcome, ${email}`;
+    if (username != null) {
+        document.getElementById('welcome').textContent = `Welcome, ${username}`;
         document.getElementById('user').style.display = 'block';
         document.getElementById('quest').style.display = 'none';
     } else {
