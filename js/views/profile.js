@@ -74,20 +74,20 @@ const profileTemplate = (item) => html`
                                     <svg class="profile__icon">
                                     <use xlink:href="images/sprite.svg#icon-whistle"></use>
                                     </svg>
-                                    <span>Played matches: ${item.playedGames}</span>
+                                    <span>Played matches: ${item.playedMatches}</span>
                                 </li>
                                 <li>
                                     <svg class="profile__icon">
                                         <use xlink:href="images/sprite.svg#icon-calendar"></use>
                                     </svg>
-                                    <span>Orginized matches: ${item.organizedGames}</span>
+                                    <span>Orginized matches: ${item.organizedMatches}</span>
                                 
                                 </li>
                                 <li>
                                     <svg class="profile__icon">
                                         <use xlink:href="images/sprite.svg#icon-star"></use>
                                     </svg>
-                                    <span>MOTM: 1</span>
+                                    <span>MOTM: ${item.manOfTheMatch}</span>
                                 
                                 </li>
                                 <li>
@@ -114,7 +114,17 @@ const profileTemplate = (item) => html`
 
 export async function profilePage(ctx) {
     const userId = sessionStorage.getItem('userId');
-    const item = await getProfile(userId);
+    const item = await getProfile();
+
+    console.log(item);
 
     ctx.render(profileTemplate(item));
 }
+
+// age: 15;
+// email: 'lucho@abv.bg';
+// manOfTheMatch: 0;
+// organizedMatches: 1;
+// phone: '0899651572';
+// playedMatches: 1;
+// username: 'lucho';

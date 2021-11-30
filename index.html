@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
-            rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <title>have fun</title>
-        <script src="./js/app.js" type="module"></script>
-    </head>
 
-    <body>
-        <header class="header">
-            <nav class="nav">
-                <div class="nav__menu" id="nav-menu">
-                    <div id="user">
-                        <ul class="nav__list">
-                            <div class="nav__div">
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">My games</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Publick games</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">PocketFEED</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Tournaments</a>
-                                </li>
-                            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>have fun</title>
+    <script src="./js/app.js" type="module"></script>
+</head>
 
-                            <div class="nav__div">
-                                <li class="nav__item">
-                                    <a
-                                        href="/profile"
-                                        class="nav__link nav__user-name"
-                                        id="welcome"
-                                    ></a>
-                                </li>
-                                <li class="nav__item">
-                                    <a id="logoutBtn" href="/" class="nav__link">Logout</a>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div id="quest">
-                        <ul class="nav__list">
-                            <div class="nav__div">
-                                <li class="nav__item">
-                                    <a href="/" class="nav__link">Home</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Publick games</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">PocketFEED</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Tournaments</a>
-                                </li>
-                            </div>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__menu" id="nav-menu">
+                <div id="user">
+                    <ul class="nav__list">
+                        <div class="nav__div">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">My games</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Publick games</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">PocketFEED</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Tournaments</a>
+                            </li>
+                        </div>
 
-                            <div class="nav__div">
-                                <li class="nav__item">
-                                    <a href="/login" class="nav__link">Login</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="/register" class="nav__link">Sign Up</a>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
+                        <div class="nav__div">
+                            <li class="nav__item">
+                                <a href="/profile" class="nav__link nav__user-name" id="welcome"></a>
+                            </li>
+                            <li class="nav__item">
+                                <a id="logoutBtn" href="/" class="nav__link">Logout</a>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-                <span class="menu-bar
-                ""><i class="fas fa-bars" id="menu-bar"></i></span>
-            </nav>
-        </header>
+                <div id="quest">
+                    <ul class="nav__list">
+                        <div class="nav__div">
+                            <li class="nav__item">
+                                <a href="/" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Publick games</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">PocketFEED</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Tournaments</a>
+                            </li>
+                        </div>
 
-        <div id="container"></div>
+                        <div class="nav__div">
+                            <li class="nav__item">
+                                <a href="/login" class="nav__link">Login</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/register" class="nav__link">Sign Up</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <span class="menu-bar
+                ""><i class=" fas fa-bars" id="menu-bar"></i></span>
+        </nav>
+    </header>
 
+    <div id="container"></div>
 
+</body>
 
-<!-- Profile form  -->
-
-
-    </body>
 </html>

@@ -8,7 +8,7 @@ export async function login(username, password) {
     // const result = await api.post(host + '/users/login', { email, password });
 
     sessionStorage.setItem('username', username);
-    sessionStorage.setItem('authToken', result.accessToken);
+    sessionStorage.setItem('authToken', result.jwt);
     // sessionStorage.setItem('userId', result._id);
 
     return result;
@@ -37,6 +37,6 @@ export async function register(email, password) {
     return result;
 }
 
-export async function getProfile(id) {
-    return await api.get(host + '/jsonstore/profile/' + id);
+export async function getProfile() {
+    return await api.get(hostJava + '/user-datails');
 }

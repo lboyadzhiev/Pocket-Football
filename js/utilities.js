@@ -11,7 +11,8 @@ export function getOptions(method = 'get', body) {
     const token = sessionStorage.getItem('authToken');
 
     if (token != null) {
-        options.headers['X-Authorization'] = token;
+        // options.headers['X-Authorization'] = token;
+        options.headers['Authorization'] = 'Bearer ' + token;
     }
 
     if (body) {
