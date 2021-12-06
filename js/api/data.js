@@ -38,5 +38,5 @@ export async function register(email, password) {
 }
 
 export async function getProfile() {
-    return await api.get(hostJava + '/user-datails');
+    return await api.get(hostJava + '/user-details');
 }

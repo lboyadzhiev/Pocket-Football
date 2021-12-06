@@ -7,7 +7,7 @@ const profileTemplate = (item) => html`
                 <div class="profile__player-info">
                     <div class="profile__img">
                         <img
-                            src="${item.imageUrl}"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE26HF3JjoME9NCp8t2kFUvYXZ2_jewd9DkQ&usqp=CAU"
                             alt="profile pic"
                             class="profile__img--img"
                         />
@@ -56,7 +56,7 @@ const profileTemplate = (item) => html`
                                 <svg class="profile__icon">
                                     <use xlink:href="images/sprite.svg#icon-at"></use>
                                 </svg>
-                                <span>${item.username}</span>
+                                <span>${item.email}</span>
                             </li>
                             <li>
                                 <svg class="profile__icon">
@@ -113,11 +113,7 @@ const profileTemplate = (item) => html`
 `;
 
 export async function profilePage(ctx) {
-    const userId = sessionStorage.getItem('userId');
     const item = await getProfile();
-
-    console.log(item);
-
     ctx.render(profileTemplate(item));
 }
 
